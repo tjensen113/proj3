@@ -30,11 +30,11 @@ we will utilize redux/state management, mysql for authentication, react and node
 
 Join The Project Page
 
-> https://github.com/users/ConnorScoma1/projects/3
+>  https://tjensen113.github.io/proj3/
 
 ## Set Up
 
-> ``` git clone https://github.com/ConnorScoma1/Project-3.git ```
+> ``` git clone  ```
 
 > ``` cd ``` into  ``` client ``` folder ``` npm install ``` for client dependantcies
 
