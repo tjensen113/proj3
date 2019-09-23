@@ -34,7 +34,7 @@ Join The Project Page
 
 ## Set Up
 
-> ``` git clone  ```
+> ``` git clone https://github.com/tjensen113/proj3.git ```
 
 > ``` cd ``` into  ``` client ``` folder ``` npm install ``` for client dependantcies
 
