@@ -3,6 +3,7 @@ import {
   withRouter
 } from 'react-router-dom'
 import API from '../utils/API'
+import "./App.css"
 
 class Manage extends React.Component {
   state = {
@@ -33,7 +34,7 @@ class Manage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="page"> 
       { this.state.item._id ? (
 
           <div>
