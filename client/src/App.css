@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
+html,
 body{
-    background: linear-gradient(to left, #8942a8, #ba382f);
     height: 100vh;
-    width: 100vw;
-    }
+}
+
 
 .form-control{
     background: linear-gradient(to left, #8942a8, #ba382f);
@@ -13,9 +12,22 @@ body{
     align-self: center;
 
 }
+/* .H3 {
+    max-width: 66%;
+    margin: 0% auto;
+    text-align: center;
+} */
+
+
+
 .page {
     background: linear-gradient(to left, #8942a8, #ba382f);
-    }
+    
+  
+    
+}
+
+
 .h1{
     text-align:center;
     font-size:100px;
@@ -26,9 +38,11 @@ li{
     padding: 60px;
     }
 .button{
+    /* background: linear-gradient(to left, #8942a8, #ba382f); */
+
     display: flex;
     justify-content: center;
-    
+    /* align-items: center; */
     padding: 2px;
     margin: 20px;
     

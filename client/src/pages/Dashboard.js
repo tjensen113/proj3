@@ -64,8 +64,9 @@ class Dashboard extends React.Component {
         <h1 className="h1">Inventory</h1>
 
         {/* Add Invetory Form */}
+        <div className="container">
         <form onSubmit={this.handleFormSubmit}>
-          <label htmlFor="productName">Product Name</label>
+          <label htmlFor="productName"><h3>Product Name</h3></label>
           <input 
             name="productName"
             type="text"
@@ -73,7 +74,7 @@ class Dashboard extends React.Component {
             onChange={this.handleChange}
             className="form-control"
           />
-          <label htmlFor="type">Product Type</label>
+          <label htmlFor="type"><h3 className="h3">Type</h3></label>
           <input 
             name="type"
             type="text"
@@ -81,7 +82,7 @@ class Dashboard extends React.Component {
             onChange={this.handleChange}
             className="form-control"
           />
-          <label htmlFor="quantity">Quantity</label>
+          <label htmlFor="quantity"><h3>Quantity</h3></label>
           <input 
             name="quantity"
             type="text"
@@ -89,15 +90,16 @@ class Dashboard extends React.Component {
             onChange={this.handleChange}
             className="form-control"
           />
-          <label htmlFor="description">Description</label>
+          <label htmlFor="description"><h3>Description</h3></label>
           <textarea 
             name="description"
             value={this.state.description}
             onChange={this.handleChange}
             className="form-control"
-          />
-          <button type="submit" className="btn btn-primary">Add</button>
+          /><div className="button"><button type="submit" >Add</button></div>
+          
         </form>
+        </div>
 
 
         {/* Inventory List */}
