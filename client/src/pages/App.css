@@ -2,25 +2,51 @@
 
 
 
-.form-control{background: linear-gradient(to left, #8942a8, #ba382f);
+.form-control{
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    max-width: 66%;
+    margin: 0 auto;
+    align-self: center;
 
 }
+/* .H3 {
+    max-width: 66%;
+    margin: 0% auto;
+    text-align: center;
+} */
+
 
 
 .page {
     background: linear-gradient(to left, #8942a8, #ba382f);
+    
+  
     
 }
 
 
 .h1{
     text-align:center;
+    font-size:100px;
 }
 
 li{
     display:inline-block;
     padding: 60px;
     }
+.button{
+    /* background: linear-gradient(to left, #8942a8, #ba382f); */
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2px;
+    margin: 20px;
+    
+    
+    /* text-align: center; */
+
+}
 /* .landing-form {
     text-align: center;
     justify-content: center;
