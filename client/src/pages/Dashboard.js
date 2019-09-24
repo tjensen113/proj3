@@ -4,7 +4,8 @@ import {
 } from 'react-router-dom'
 import API from '../utils/API'
 import InventoryItem from '../components/InventoryItem'
-
+import "./App.css"
+;
 class Dashboard extends React.Component {
   state = {
     productName: '',
@@ -59,8 +60,8 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Inventory</h1>
+      <div className="page">
+        <h1 className="h1">Inventory</h1>
 
         {/* Add Invetory Form */}
         <form onSubmit={this.handleFormSubmit}>
@@ -100,7 +101,8 @@ class Dashboard extends React.Component {
 
 
         {/* Inventory List */}
-        <ul>
+        
+        <ul className="bottomPage">
           { 
             this.state.inventoryItems.map(item => (
               <InventoryItem 
@@ -112,8 +114,10 @@ class Dashboard extends React.Component {
             ))
           }
         </ul>
-
+        
+        
       </div>
+      
     )
   }
 }
