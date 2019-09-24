@@ -7,7 +7,7 @@ body{
 
 .form-control{
     background: linear-gradient(to left, #8942a8, #ba382f);
-    max-width: 66%;
+    max-width: 100%;
     margin: 0 auto;
     align-self: center;
 

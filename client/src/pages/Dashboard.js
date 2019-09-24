@@ -64,6 +64,7 @@ class Dashboard extends React.Component {
         <h1 className="h1">Inventory</h1>
 
         {/* Add Invetory Form */}
+        <div className="container">
         <form onSubmit={this.handleFormSubmit}>
           <label htmlFor="productName"><h3>Product Name</h3></label>
           <input 
@@ -98,6 +99,7 @@ class Dashboard extends React.Component {
           /><div className="button"><button type="submit" >Add</button></div>
           
         </form>
+        </div>
 
 
         {/* Inventory List */}
