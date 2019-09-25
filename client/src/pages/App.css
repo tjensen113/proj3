@@ -25,17 +25,32 @@ li{
     display:inline-block;
     padding: 60px;
     }
-.button{
+/* .add-button{
     display: flex;
     justify-content: center;
     
     padding: 2px;
     margin: 20px;
+} */
+.add-button {
+    margin-left: 30%;
+    margin-top: 5%;
+    background: #db5e24;
+    color: white;
+    border: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: .3s ease;
+    }
     
     
     /* text-align: center; */
 
-}
+
 /* .landing-form {
     text-align: center;
     justify-content: center;
