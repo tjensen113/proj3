@@ -8,7 +8,7 @@
     top: 30%;
     margin-right: 25%;
     margin-left: 25%;
-    height: 300px;
+    /* height: 300px; */
     position: relative;
     background: white;
     border-radius: 5px;
@@ -69,4 +69,4 @@
 .login-btn:hover {
     opacity: .8;
     transition: .3s ease;
-}
+} 

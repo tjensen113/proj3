@@ -4,6 +4,8 @@ import {
   Link
 } from 'react-router-dom'
 import './app.css'
+import Float from '../../components/Float/Float.js'
+
 
 
 function Login(props) {
@@ -13,7 +15,10 @@ function Login(props) {
   }
 
   return (
-    <div className="page-container">
+    
+    <div className="page-container"
+    >
+      <Float />
       <form className="form-container">
         <div className="userInput">
           <label className="form-lable">Username</label>
@@ -21,9 +26,16 @@ function Login(props) {
           <label className="form-lable">Password</label>
         <input className="pass" name="password" type="text" placeholder="password"  />
         <button className="login-btn" onClick={signIn}>Sign In</button>
+        
         <div className="routeToSignUpPage">Don't Have an Account <Link to={'/signup'}>Sign Up</Link></div>
+        
         </div>
       </form>
+     
+      
+      
+      
+                    
     </div>
   )
 }
