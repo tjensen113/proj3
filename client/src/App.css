@@ -42,14 +42,34 @@ li{
 
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    padding: 2px;
-    margin: 20px;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 5%;
+    background: #db5e24;
+    color: white;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: .3s ease;
     
+    /* padding: .75rem;
+    border: 1px solid white;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+    color: white;
+    transition: .5s ease; */
+    
+}
+
+
+        
     
     /* text-align: center; */
-
-}
 /* .landing-form {
     text-align: center;
     justify-content: center;

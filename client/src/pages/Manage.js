@@ -72,7 +72,7 @@ class Manage extends React.Component {
                 onChange={this.handleChange}
                 className="form-control"
               />
-              <button type="submit" className="btn btn-primary">Update</button>
+              <button type="submit" className="add-button">Update</button>
             </form>
           </div>
 

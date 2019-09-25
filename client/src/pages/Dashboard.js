@@ -96,7 +96,7 @@ class Dashboard extends React.Component {
             value={this.state.description}
             onChange={this.handleChange}
             className="form-control"
-          /><div className="button"><button type="submit" >Add</button></div>
+          /><button className="button">add</button>
           
         </form>
         </div>
