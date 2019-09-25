@@ -18,6 +18,14 @@ app.use(routes);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/inventoryManager");
 
+mongoose
+  .connect(
+    "mongodb://localhost/user",
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log("MongoDB successfully connected"))
+  .catch(err => console.log(err));
+
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

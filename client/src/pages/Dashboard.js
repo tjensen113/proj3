@@ -15,7 +15,7 @@ class Dashboard extends React.Component {
     inventoryItems: []
   }
 
-  componentDidMount() {
+  componentDidMount() { 
     this.loadInventory()
   }
   

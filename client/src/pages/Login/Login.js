@@ -1,31 +1,58 @@
-import React from 'react'
-import {
-  withRouter,
-  Link
-} from 'react-router-dom'
-import './app.css'
+import React from "react";
+import { BrowserRouter as Router, withRouter, Link } from "react-router-dom";
+import "./app.css";
 
+import { withAuth } from "@okta/okta-react";
+import { useAuth } from "../../auth";
+import { Security, ImplicitCallback } from "@okta/okta-react";
 
-function Login(props) {
+  const App = withAuth(({ auth }) => {
+    const [authenticated] = useAuth(auth);
   
-  const signIn = () => {
-    props.history.push('/dashboard')
-  }
 
   return (
-    <div className="page-container">
-      <form className="form-container">
-        <div className="userInput">
-          <label className="form-lable">Username</label>
-        <input className="user" name="username" type="text" placeholder="email or username" />
-          <label className="form-lable">Password</label>
-        <input className="pass" name="password" type="text" placeholder="password"  />
-        <button className="login-btn" onClick={signIn}>Sign In</button>
-        <div className="routeToSignUpPage">Don't Have an Account <Link to={'/signup'}>Sign Up</Link></div>
-        </div>
-      </form>
-    </div>
-  )
-}
+   
+    <Router>
+      <div className="page-container">
+        <Security
+          issuer={`https://dev-452273.okta.com/oauth2/default`}
+          client_id={`0oa1eykgpbSTQSDkg357`}
+          redirect_uri={`https://dev-452273.okta.com/oauth2/default`}
+        ></Security>
 
-export default withRouter(Login)
+        <form className="form-container">
+          <div className="userInput">
+            <label className="form-lable">Username</label>
+            <input
+              className="user"
+              name="username"
+              type="text"
+              placeholder="email or username"
+            />
+            <label className="form-lable">Password</label>
+            <input
+              className="pass"
+              name="password"
+              type="text"
+              placeholder="password"
+            />
+         
+              <button
+                onClick={() => (authenticated ? auth.logout() : auth.login())}
+                className=""
+              >
+                Log {authenticated ? "out" : "in"}
+              </button>
+
+            <div className="routeToSignUpPage">
+              Don't Have an Account <Link to={"/signup"}>Sign Up</Link>
+            </div>
+          </div>
+        </form>
+      </div>
+    </Router>
+  );
+});
+
+
+export default App;
