@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, withRouter, Link } from "react-router-dom";
-import "./app.css";
-
+import "../App.css";
+import Float from "../../components/Float/Float.js";
 import { withAuth } from "@okta/okta-react";
 import { useAuth } from "../../auth";
 import { Security, ImplicitCallback } from "@okta/okta-react";
+
 
   const App = withAuth(({ auth }) => {
     const [authenticated] = useAuth(auth);
@@ -21,7 +22,9 @@ import { Security, ImplicitCallback } from "@okta/okta-react";
         ></Security>
 
         <form className="form-container">
+        <Float />
           <div className="userInput">
+          
             <label className="form-lable">Username</label>
             <input
               className="user"
@@ -37,15 +40,16 @@ import { Security, ImplicitCallback } from "@okta/okta-react";
               placeholder="password"
             />
          
-              <button
+              <button 
+                
                 onClick={() => (authenticated ? auth.logout() : auth.login())}
-                className=""
+                className="login-btn"
               >
                 Log {authenticated ? "out" : "in"}
               </button>
 
             <div className="routeToSignUpPage">
-              Don't Have an Account <Link to={"/signup"}>Sign Up</Link>
+              Don't Have an Account <br></br><Link to={"/signup"}>Sign Up</Link>
             </div>
           </div>
         </form>

@@ -3,22 +3,22 @@ import axios from "axios";
 export default {
   // Gets all inventory
   createInventory: function(data) {
-    return axios.post("/api/inventory", data);
+    return axios.post("/api/dashboard", data);
   },
   findAllInventory: function() {
-    return axios.get("/api/inventory");
+    return axios.get("/api/dashboard");
   },
   // Gets the book with the given id
   getSingleInventory: function(id) {
-    return axios.get("/api/inventory/" + id);
+    return axios.get("/api/dashboard/" + id);
   },
   // Deletes the book with the given id
   deleteInventory: function(id) {
-    return axios.delete("/api/inventory/" + id);
+    return axios.delete("/api/dashboard/" + id);
   },
   // Saves a book to the database
   updateInventory: function(bookData) {
-    return axios.put("/api/inventory", bookData);
+    return axios.put("/api/dashboard", bookData);
   },
 
   /********************
