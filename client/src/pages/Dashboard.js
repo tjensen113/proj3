@@ -70,6 +70,7 @@ class Dashboard extends React.Component {
           <input 
             name="productName"
             type="text"
+            className="input-form"
             value={this.state.productName}
             onChange={this.handleChange}
             className="form-control"

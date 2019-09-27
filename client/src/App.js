@@ -27,8 +27,8 @@ class App extends Component {
             <Route path='/' exact={true} component={Home} />
             <Route path='/login' render={() => <Login baseUrl='https://dev-218780.okta.com' />} />
             <Route exact path="/signup" component={SignUp} />
-            <SecureRoute exact path="/dashboard" component={Dashboard} />
-            <SecureRoute exact path="/manage" component={Manage} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/manage" component={Manage} />
 
             <Route path='/implicit/callback' component={ImplicitCallback} />
         </Security>

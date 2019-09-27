@@ -4,6 +4,7 @@ body{
     background: linear-gradient(to left, #8942a8, #ba382f);
     height: 100vh;
     width: 100vw;
+    color: white;
 }
     /* ============================
     Floating Box Aniamtions
@@ -124,7 +125,12 @@ body{
     width: 100vw;
 }
 
-/* .form-container {
+.input-form{
+    color: white;
+}
+
+/* 
+.form-container {
     top: 30%;
     margin-right: 25%;
     margin-left: 25%;
@@ -133,7 +139,7 @@ body{
     background: white;
     border-radius: 5px;
     box-shadow: 5px 5px rgba(0, 0, 0, .2);
-  } */
+  }  */
 
 .userInput {
   margin: 0;
