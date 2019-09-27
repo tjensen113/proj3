@@ -22,10 +22,21 @@ export default withAuth(class Login extends Component {
     this.checkAuthentication();
   }
 
-  onSuccess = (res) => {
-      return this.props.auth.redirect({
-          sessionToken: res.session.token
-      })
+  onSuccess(res) {
+    this.props.auth._oktaAuth.token.getWithoutPrompt({
+      sessionToken: res.session.token,
+      responseType: ['token', 'id_token'],
+      scopes: ['openid', 'profile'],
+    }).then(async tokens => {
+      for (let token of tokens) {
+        if (token.idToken) {
+          this.props.auth._oktaAuth.tokenManager.add('idToken', token);
+        } else if (token.accessToken) {
+          this.props.auth._oktaAuth.tokenManager.add('accessToken', token);
+        }
+      }
+      this.setState({authenticated: true});
+    })
   }
 
   render() {
