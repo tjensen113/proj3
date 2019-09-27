@@ -42,10 +42,11 @@ export default withAuth(class Login extends Component {
   render() {
     if (this.state.authenticated === null) return null;
     return this.state.authenticated ?
-      <Redirect to={'/'}/> :
+      <Redirect to={'https://project-3333123123123123.herokuapp.com/dashboard'}/> :
+
       <LoginForm 
         baseUrl={this.props.baseUrl} 
         onSuccess={this.onSuccess}
-        />;
+      />
   }
 });
