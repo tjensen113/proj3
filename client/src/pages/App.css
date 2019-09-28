@@ -129,6 +129,10 @@ body{
     color: white;
 }
 
+.color-white {
+    color: white;
+}
+
 /* 
 .form-container {
     top: 30%;
@@ -190,6 +194,10 @@ body{
     border-radius: 5px; 
     cursor: pointer;
     transition: .3s ease;
+}
+
+.btn {
+    cursor: pointer;
 }
 
 /* .login-btn:hover {
