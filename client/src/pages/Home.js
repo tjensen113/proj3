@@ -59,23 +59,27 @@ export default withAuth(
               react and node as well express
             </h5>
             <br />
+      
+              <h3>Technologies Used</h3>
+              <br />
+              <h5>Mongo</h5>
+              <h5>Express</h5>
+              <h5>React</h5>
+              <h5>Node</h5>
 
-            <h3>Technologies Used</h3>
-            <br />
-            <h5>Mongo</h5>
-            <h5>Express</h5>
-            <h5>React</h5>
-            <h5>Node</h5>
           </div>
-          <Link to="/" className="btn color-white">
-            Home
-          </Link>
-          <br />
-          <Link to="/dashboard" className="btn color-white">
-            dashboard
-          </Link>
-          <br />
-          <div className="btn">{button}</div>
+
+          <center>
+            <Link to="/" className="btn color-white">
+              Home
+            </Link>
+            <br />
+            <Link to="/dashboard" className="btn color-white">
+              dashboard
+            </Link>
+            <br />
+            <div className="btn">{button}</div>
+          </center>
         </div>
       );
     }
