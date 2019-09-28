@@ -2,7 +2,7 @@
   "name": "mern",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:3001/",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@okta/okta-auth-js": "^2.9.0",
     "@okta/okta-react": "^1.2.3",
@@ -14,7 +14,7 @@
     "react-scripts": "^3.1.2"
   },
   "scripts": {
-    "start": "set HTTPS=true && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
